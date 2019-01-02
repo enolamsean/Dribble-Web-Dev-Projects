@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,800" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="Branding_Exploration.css"/>
+	<!--design inspiration: https://dribbble.com/shots/5330983-Unfold-Branding-Exploration-->
+	<title>Unfold - Branding Exploration</title>
+</head>
+<body>
+	<div class="container">
+		<div class="primary">
+			<div class="content" style="justify-content: flex-end;top:50%;"><h1><img src="img/Unfold_icons-01.png">&nbsp;&nbsp;&nbsp;Branding</h1><p>Lorem ipsum dolor sit amet, cu exerci splendide eam, has alia solum nulla eu. Porro numquam aliquando ad sea, utinam eligendi pri ei, eu iudico persius fierent vix. Pri exerci</p>
+			</div>
+		</div>
+			<div class="secondary">
+			<div class="content"><h1><img src="img/Unfold_icons-02.png">&nbsp;&nbsp;&nbsp;illustration</h1><p>Lorem ipsum dolor sit amet, cu exerci splendide eam, has alia solum nulla eu. Porro numquam aliquando ad sea, utinam eligendi pri ei, eu iudico persius fierent vix. Pri exerci</p>
+			</div>
+			<div class="bottom-two">
+		<div class="third">
+			<div class="content"><h1><img src="img/Unfold_icons-04.png">&nbsp;&nbsp;&nbsp;Web</h1><p style="max-width: 250px;">Lorem ipsum dolor sit amet, cu exerci splendide eam, has alia solum nulla eu. </p>
+			</div>
+		</div>
+		<div class="fourth">
+			<div class="content"><h1><img src="img/Unfold_icons-03.png">&nbsp;&nbsp;&nbsp;Apps</h1><p style="max-width: 250px;">Lorem ipsum dolor sit amet, cu exerci splendide eam, has alia solum nulla eu. </p>
+			</div>
+			</div>
+		</div>
+	</div>
+			</div>
+
+	<div class="icnography">
+		<div class="icon" style="flex:2; pointer-events: none; padding-left: 0; margin: 0;"><h5>iconography</h5></div>
+		<div class="icon"><img src="img/Unfold_icons-11.png"></div>
+		<div class="icon"><img src="img/Unfold_icons-10.png"></div>
+		<div class="icon"><img src="img/Unfold_icons-05.png" ></div>
+
+		<div class="icon"><img src="img/Unfold_icons-01.png" ></div>
+		<div class="icon"><img src="img/Unfold_icons-06.png"></div>
+		<div class="icon"><img src="img/Unfold_icons-07.png"></div>
+		<div class="icon"><img src="img/Unfold_icons-09.png"></div>
+		<div class="icon"><img src="img/Unfold_icons-08.png"></div>
+		<div class="icon"><img src="img/Unfold_icons-12.png"></div>
+	</div>
+			<h5>color pallete</h5>
+
+	<div class="color_pallete">
+		<div class="color" style="color: #FD2C57;" ><div class="color" style="background-color: #FD2C57; margin-bottom: 10px; pointer-events: none;"></div>FD2C57</div>
+		<div class="color" style="color: #39B7FF;" ><div class="color" style="background-color: #39B7FF;margin-bottom: 10px; pointer-events: none;"></div>39B7FF</div>
+		<div class="color" style="color: #FFC700;" ><div class="color" style="background-color:#FFC700;margin-bottom: 10px; pointer-events: none;"></div>FFC700</div>
+		<div class="color" style="color: #444547;
+" ><div class="color" style="background-color: #444547;margin-bottom: 10px; pointer-events: none;"></div>444547</div>
+		<div class="color" style="color:#1BD1B1;
+" ><div class="color" style="background-color: #1BD1B1; margin-bottom: 10px; pointer-events: none;
+"></div>1BD1B1</div>
+	</div>
+
+<footer>
+	<div class="credits"><h5>Design Credit: <a href="https://dribbble.com/lobanovskiy">Eddie Lobanovskiy<a/>  |  <a href="https://dribbble.com/shots/5330983-Unfold-Branding-Exploration">Design</a><br>Digital Development Credit: <a href="http://seanmmalone.com/">Sean Malone</a></h5> </div>
+</footer>
+	 <script>
+    const panels = document.querySelectorAll('.color');
+
+    function toggleOpen() {
+      console.log('Hello');
+      this.classList.toggle('open');
+    }
+
+    function toggleActive(e) {
+      console.log(e.propertyName);
+      if (e.propertyName.includes('flex')) {
+        this.classList.toggle('open-active');
+      }
+    }
+
+    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+    panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+
+  </script>
+</body>
+</html>
